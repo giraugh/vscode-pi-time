@@ -5,7 +5,7 @@
   "author": "giraugh",
   "publisher": "giraugh",
   "version": "0.0.1",
-  "icon": "./images/pie_icon.png",
+  "icon": "images/pie_icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/giraugh/vscode-pi-time"
