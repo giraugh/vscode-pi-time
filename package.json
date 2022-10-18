@@ -4,12 +4,13 @@
   "description": "Never miss pi-time again",
   "author": "giraugh",
   "publisher": "giraugh",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "images/pie_icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/giraugh/vscode-pi-time"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.0.0"
   },

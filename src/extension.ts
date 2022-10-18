@@ -25,6 +25,7 @@ export const activate = ({ subscriptions }: ExtensionContext) => {
   // Keep the item up to date
   subscriptions.push(window.onDidChangeActiveTextEditor(updateItem(item)))
   subscriptions.push(window.onDidChangeTextEditorSelection(updateItem(item)))
+  setInterval(() => updateItem(item), 60 * 1000)
 
   updateItem(item)()
 }
