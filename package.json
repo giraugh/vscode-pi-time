@@ -4,7 +4,7 @@
   "description": "Never miss pi-time again",
   "author": "giraugh",
   "publisher": "giraugh",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icon": "images/pie_icon.png",
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-import { window, StatusBarAlignment, ExtensionContext, StatusBarItem, TextEditor } from 'vscode'
+import { window, StatusBarAlignment, StatusBarItem } from 'vscode'
 
 const isPiTime = (): boolean => {
   const now = new Date()
@@ -15,17 +15,10 @@ const updateItem = (item: StatusBarItem) => () => {
   }
 }
 
-export const activate = ({ subscriptions }: ExtensionContext) => {
-  console.log('Activate extension')
-
+export const activate = () => {
   // Create the status bar item
   const item: StatusBarItem = window.createStatusBarItem(StatusBarAlignment.Right, 500)
-  subscriptions.push(item)
 
   // Keep the item up to date
-  subscriptions.push(window.onDidChangeActiveTextEditor(updateItem(item)))
-  subscriptions.push(window.onDidChangeTextEditorSelection(updateItem(item)))
-  setInterval(() => updateItem(item), 60 * 1000)
-
-  updateItem(item)()
+  setInterval(updateItem(item), 2000)
 }
